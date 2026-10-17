@@ -26,3 +26,8 @@ jobs:
 
       - name: Run Shorts script
         run: python make_short.py
+      - name: Upload video
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-short
+          path: output/
